@@ -54,7 +54,7 @@ export const Test: Component<TestProps> = (props) => {
                     <p>Match</p>
                 </Show>
                 <div class="flex gap-0.5">
-                    {content().map((char, i) => char)}
+                    {content().map((char, _i) => char)}
                 </div>
                 <Show when={correct() == props.match} fallback={
                     <i class="fa-solid fa-x text-red-700"></i>

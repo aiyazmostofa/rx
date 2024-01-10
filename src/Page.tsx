@@ -14,9 +14,9 @@ export const Page: Component<PageProps> = (props) => {
         <>
             <div class="flex flex-col gap-3">
                 <p class="text-3xl font-bold mb-2">{props.title}</p>
-                <For each={props.matches}>{(word, i) => <Test word={word} regex={regex} match={true} />}
+                <For each={props.matches}>{(word, _i) => <Test word={word} regex={regex} match={true} />}
                 </For>
-                <For each={props.skips}>{(word, i) => <Test word={word} regex={regex} match={false} />}
+                <For each={props.skips}>{(word, _i) => <Test word={word} regex={regex} match={false} />}
                 </For>
 
                 <div class="flex gap-4 items-center self-center">
